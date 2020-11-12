@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'inicio.h'
 **
-** Created: Thu 12. Nov 13:32:48 2020
+** Created: Thu 12. Nov 16:49:27 2020
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

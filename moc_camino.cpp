@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'camino.h'
 **
-** Created: Thu 12. Nov 13:32:48 2020
+** Created: Thu 12. Nov 16:49:27 2020
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_camino[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,12 +33,16 @@ static const uint qt_meta_data_camino[] = {
  // slots: signature, parameters, type, tag, flags
        8,    7,    7,    7, 0x0a,
       27,    7,    7,    7, 0x0a,
+      38,    7,    7,    7, 0x0a,
+      49,    7,    7,    7, 0x0a,
+      58,    7,    7,    7, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_camino[] = {
-    "camino\0\0refrescarventana()\0cerrar()\0"
+    "camino\0\0refrescarventana()\0ventana3()\0"
+    "ventana4()\0final1()\0final2()\0"
 };
 
 void camino::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -48,7 +52,10 @@ void camino::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         camino *_t = static_cast<camino *>(_o);
         switch (_id) {
         case 0: _t->refrescarventana(); break;
-        case 1: _t->cerrar(); break;
+        case 1: _t->ventana3(); break;
+        case 2: _t->ventana4(); break;
+        case 3: _t->final1(); break;
+        case 4: _t->final2(); break;
         default: ;
         }
     }
@@ -87,9 +94,9 @@ int camino::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 5;
     }
     return _id;
 }

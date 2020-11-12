@@ -76,10 +76,12 @@ void inicio::cargararchivo()
 	struct visita_tecnica_s vt;
 	FILE *FP;
 
-	if((FP=fopen("BasedeDatos","a+b"))==NULL)
+	if((FP=fopen("BasedeDatos","r+b"))==NULL)	//El problema de la escritura aprece cuando se abre en modo append
+
 	{
 		printf("Error al abrir el archivo");
 	}
+	fseek(FP,0,SEEK_END); //Coloco la ventana al final de todo;
 
 
 	const char *aux=getTecnico().toStdString().c_str();
@@ -89,6 +91,10 @@ void inicio::cargararchivo()
 	aux=getFecha().toStdString().c_str();
 	strcpy(vt.fecha,aux);
 	aux=getEmpresa().toStdString().c_str();
+	strcpy(vt.empresa,aux);
+	strcpy(vt.trabajo_realizado," ");
+
+
 	fwrite(&vt,sizeof(vt),1,FP);
 	fseek(FP,sizeof(vt)*-1,SEEK_CUR);
 	fseek(FP,0,SEEK_CUR);
