@@ -2,6 +2,10 @@
 #pragma once
 
 #include "inicio.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 
 class camino: public QWidget
 {
@@ -16,11 +20,18 @@ private:
 
 public:
 	camino(FILE*FP,QWidget * parent=0);
+	FILE *FPP;
 
 public slots:
 	void refrescarventana();
-	void cerrar();
 
+	//Camino 1
+	void ventana3();
+	void ventana4();
+	void final1();
+	void final2();
+
+	//Camino 2
 };
 
 
